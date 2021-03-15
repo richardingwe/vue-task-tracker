@@ -29,8 +29,18 @@
       toggleAddTask() {
         this.showAddTask = !this.showAddTask
       },
-      addTask(newTask) {
-        this.tasks = [...this.tasks, newTask]
+      async addTask(task) {
+        const res = await fetch('api/tasks', {
+          method: 'POST',
+          headers: {
+            'Content-type': 'application/json',
+          },
+          body: JSON.stringify(task),
+        })
+
+        const data = await res.json()
+
+        this.tasks = [...this.tasks, data]
       },
       deleteTask(id) {
         if(confirm("Are you sure?")) {
