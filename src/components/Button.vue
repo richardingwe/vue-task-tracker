@@ -13,7 +13,7 @@
         },
         methods: {
             onclick() {
-                alert("click")
+                this.$emit('toggle-add-task')
             }
         }
     }
