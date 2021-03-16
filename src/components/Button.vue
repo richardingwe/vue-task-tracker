@@ -15,6 +15,6 @@
             onclick() {
                 this.$emit('btn-click')
             }
-        }
+        },
     }
 </script>

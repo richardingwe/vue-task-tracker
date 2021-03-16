@@ -20,7 +20,7 @@
         components: {
             Button
         },
-        emits: ['btn-click']
+        emits: ['toggle-add-task']
     }
 </script>
 

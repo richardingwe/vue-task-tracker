@@ -4,13 +4,19 @@
       "id": "2",
       "text": "Meeting at School",
       "day": "March 3rd at 1:30pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "text": "eat alot of food",
       "day": "today",
       "reminder": false,
       "id": "xcZ9Qd9"
+    },
+    {
+      "text": "hello world",
+      "day": "today",
+      "reminder": true,
+      "id": "BU7Hbuv"
     }
   ]
 }
